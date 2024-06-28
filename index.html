@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
@@ -18,19 +15,21 @@
     <header class="header">
       <div class="logo">Abdi Sileshi</div>
       <nav id="desktop-navigation">
-        <div>
+        
           <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+           
             
           </ul>
-        </div>
+        
       </nav>
-      <div class="contact">
-        <a class="btn" id="lets-talk-button" href="#contact">Contact Me</a>
-      </div>
+      
+        <button class="btn" id="lets-talk-button" href="#contact">Contact Me</button>
+      
     </header>
 
     <!-- Home Section -->
@@ -41,16 +40,18 @@
         <h3>I'm a <span>Frontend Developer</span></h3>
         
         <div class="socials">
-          <a href="" class="" target="" rel="">
-            <img src="assets/telegram.svg" alt="telegram" class="icon">
+          <a href="https://msng.link/o?Keytoran=tg" class="" target="" rel="">
+            <img src="assets/telegram.svg" alt="
+            
+            telegram" class="icon">
         </a>
-          <a href="" class="" target="" rel="">
+          <a href="https://www.instagram.com/abdi_sile?igsh=eHl0ZDQ3N2RsN29" class="" target="" rel="">
             <img src="assets/instagram.svg" alt="instagram" class="icon">
         </a>
-          <a href="" class="" target="" rel="">
+          <a href="https://x.com/KetoranSile" class="" target="" rel="">
             <img src="assets/twitter.svg" alt="twitter" class="icon">
         </a>
-          <a href="" class="" target="" rel="">
+          <a href="https://www.linkedin.com/in/abdi-worku-56710a2a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="" target="" rel="">
             <img src="assets/linkedin.svg" alt="linkedin" class="icon">
         </a>
           
@@ -192,11 +193,11 @@
     </section>
 
     <!-- Skills  Section-->
-    <section class="skills">
+    <section class="skills" id="skills">
       <h1 class="skills-title">My <span>Skills</span></h1>
       <div class="skills-section-details">
         <div class="skills-left-side">
-          <h2>Why Work with me?</h1>
+          <h2>Why Work with me?</h2>
           <p>
             Choose to work with me for expert frontend development, UI/UX design, and single page application expertise, tailored solutions, attention to detail, timely delivery, and continuous support.
           </p>
@@ -321,9 +322,30 @@
         </div>
       </div>
     </section>
-    <section class="projects" id="projects">
-      <div class=""
-      
+    <!-- Projects section -->
+    <section class="projects-section" id="projects">
+      <h2>Projects</h2>
+      <div class="project-card-container">
+        <div class="project-card">
+          <img src="./assets/project1omni.png" alt="Project 1 Image">
+          <div class="project-title">Omnifood</div>
+          <div class="project-description">"OmniFood: A cutting-edge food delivery service, offering a diverse range of delicious and nutritious meals delivered right to your door. With a sleek interface, easy ordering, and prompt delivery, OmniFood ensures a hassle-free dining experience for food lovers seeking convenience without sacrificing quality"</div>
+          <a href="https://github.com/Ketoransile/Omnifood-Project" class="project-github-link" target="_blank">GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="./assets/project2.jpg" alt="Project 2 Image">
+            <div class="project-title">Forkify Pro</div>
+          <div class="project-description">
+            "Forkify Pro Recipe Search: Empowering home cooks and culinary enthusiasts with a comprehensive recipe search platform. Discover, save, and share your favorite recipes effortlessly. With advanced search filters and personalized recommendations, Forkify Pro elevates your cooking experience to new heights."</div>
+          <a href="https://github.com/Ketoransile/Forkify-pro" class="project-github-link" target="_blank">GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="./assets/project3.png" alt="Project 3 Image">
+          <div class="project-title">My To do</div>
+          <div class="project-description">"To-Do List: Your ultimate task management solution, helping you stay organized and productive. Create, edit, and prioritize tasks with ease. Never miss a deadline again with intuitive reminders and seamless synchronization across all your devices. Simplify your life with To-Do List."</div>
+          <a href="https://github.com/Ketoransile/To-Do-List" class="project-github-link" target="_blank">GitHub</a>
+        </div>
+      </div>
     </section>
     
     <section id="contact" class="contact-section">
@@ -331,8 +353,8 @@
         <div class="contact-left">
           <h1>Contact <span>Me</span></h1>
           <div class="contact-symbols">
-            <p>&#9742;   +251988734632</p>
-            <p>&#9993;   abdisileshi123@gmail.com</p>
+            <div class="mobile">&#9742;   +251988734632</div>
+            <div class="gmail">&#9993;   abdisileshi123@gmail.com</div>
           </div>
         </div>
         <div class="contact-right">
@@ -345,13 +367,15 @@
                   <input type="text" placeholder="example@gmail.com" class="box"/>
                 <label>Messages*</label>
                 <textarea type="text" id="message-box"></textarea>
-                <button class="send-btn">Send &#8594;</button>
+                <button class="send-btn"> Submit</button>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="script.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script> 
   </body>
 </html>
 <!-- <div class="skills-left-side">
