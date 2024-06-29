@@ -30,13 +30,13 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <ul class="nav-links">
-          <li><div class="logo">Abdi Sileshi</div></li>
+          <li><a class="logo" href="#">Abdi Sileshi</a></li>
           <li class="hideOnMobile"><a href="#home">Home</a></li>
           <li class="hideOnMobile"><a href="#about">About</a></li>
           <li class="hideOnMobile"><a href="#services">Services</a></li>
           <li class="hideOnMobile"><a href="#skills">Skills</a></li>
           <li class="hideOnMobile"><a href="#projects">Projects</a></li>
-          <li class="menu-button" onclick=showSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+          <li class="menu-button" onclick="showSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
       </nav>
       <a class="btn" id="lets-talk-button" href="#contact">Contact Me</a>
@@ -67,7 +67,7 @@
         </a>
           
         </div>
-        <a href="#" class="btn resume-btn">Download Resume</a>
+        <a href="https://drive.google.com/file/d/10DiHTU6yBJJfGYW8wkVczdrANUkt-OXl/view?usp=drive_link" class="btn resume-btn">Download Resume</a>
       </div>
       <div class="home-img ">
         <img
@@ -96,7 +96,7 @@
             
             Let's collaborate and bring your digital vision to life!
           </p>
-          <button class="aboutme-btn btn">More about Me</button>
+          <a class="aboutme-btn btn" href="https://drive.google.com/file/d/10DiHTU6yBJJfGYW8wkVczdrANUkt-OXl/view?usp=drive_link">More about Me</a>
         </div>
       </div>
     </section>
@@ -124,16 +124,9 @@
               />
             </svg>
           </div>
-          <div class="service-title">User Interface/UI Development</div>
+          <div class="service-title">User Interface/UX Development<br></br></div>
           <div class="service-detail">
-            Our UI/UX design service focuses on understanding your users' needs
-            and translating those insights into intuitive and visually
-            captivating interfaces. Through a meticulous design process, we
-            craft wireframes, mockups, and prototypes to ensure that every
-            interaction is seamless and delightful for your users. Whether it's
-            creating user personas, conducting usability tests, or refining the
-            user flow, we are dedicated to delivering designs that not only look
-            great but also enhance the overall user experience.
+            <p>I am focused on understanding your users' needs and translating those insights into intuitive and visually captivating interfaces. Through a meticulous User Interface/UI Development process, we craft wireframes, mockups, and prototypes to ensure that every interaction is seamless and delightful for your users. Whether it's creating user personas, conducting usability tests, or refining the user flow, I am dedicated to delivering designs that not only look great but also enhance the overall user experience.</p>
           </div>
         </div>
         <div class="service-2 grid-item">
@@ -154,17 +147,9 @@
               />
             </svg>
           </div>
-          <div class="service-title">Frontend Development</div>
+          <div class="service-title">Frontend Development<br></br></div>
           <div class="service-detail">
-            Our frontend development service brings your designs to life,
-            utilizing the latest web technologies and best practices to build
-            interactive and responsive web interfaces. From HTML and CSS for
-            structure and styling to JavaScript and frameworks like React for
-            dynamic functionality, we ensure that your web application is not
-            only visually appealing but also performs flawlessly across devices
-            and browsers. With a focus on clean code and scalability, we strive
-            to deliver frontend solutions that are both robust and maintainable
-            for long-term success.
+           <p> I bring your designs to life through our frontend development service, utilizing the latest web technologies and best practices to build interactive and responsive web interfaces. From HTML and CSS for structure and styling to JavaScript and frameworks like React for dynamic functionality, I ensure that your web application is not only visually appealing but also performs flawlessly across devices and browsers. With a focus on clean code and scalability, I strive to deliver frontend solutions that are both robust and maintainable for long-term success.</p>
           </div>
         </div>
         <div class="service-3 grid-item">
@@ -189,15 +174,7 @@
             Single Page Application (SPA) Development
           </div>
           <div class="service-detail">
-            Our single page application (SPA) development service empowers your
-            web application with the power of React, enabling seamless
-            navigation and dynamic content rendering without page reloads. By
-            leveraging React's component-based architecture and virtual DOM, we
-            create SPAs that offer a smooth and immersive user experience
-            similar to native desktop or mobile applications. Whether it's
-            building a portfolio website, an e-commerce platform, or a
-            productivity tool, we harness the full potential of React to deliver
-            high-performance SPAs that engage and retain your users effectively.
+            <p>My single page application (SPA) development service empowers your web application with the power of React, enabling seamless navigation and dynamic content rendering without page reloads. By leveraging React's component-based architecture and virtual DOM, I create SPAs that offer a smooth and immersive user experience similar to native desktop or mobile applications. Whether it's building a portfolio website, an e-commerce platform, or a productivity tool, I harness the full potential of React to deliver high-performance SPAs that engage and retain your users effectively.</p>
           </div>
         </div>
       </div>
@@ -364,38 +341,45 @@
         <div class="contact-left">
           <h1>Contact <span>Me</span></h1>
           <div class="contact-symbols">
-            <div class="mobile">&#9742;   +251988734632</div>
-            <div class="gmail">&#9993;   abdisileshi123@gmail.com</div>
+            <p class="mobile">&#9742; +251988734632</p>
+            <p class="gmail">&#9993; abdisileshi123@gmail.com</p>
           </div>
         </div>
         <div class="contact-right">
-          <div class="contact-inputs">
-                <label>Full Name*</label>
-                <input type="text" class="box"/>
-                  <label>Phone Number</label>
-                  <input type="text" class="box"/>
-                  <label>Email</label>
-                  <input type="text" placeholder="example@gmail.com" class="box"/>
-                <label>Messages*</label>
-                <textarea type="text" id="message-box"></textarea>
-                <button class="send-btn"> Submit</button>
+          <form name="contact" method="POST" data-netlify="true" action="/thank-you">
+            <input type="hidden" name="form-name" value="contact">
+            
+            <div class="contact-inputs">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" class="box" required/>
+              
+              <label for="phoneNumber">Phone Number</label>
+              <input type="text" id="phoneNumber" name="phoneNumber" class="box"/>
+              
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="example@gmail.com" class="box" required/>
+              
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="box" required></textarea>
+              
+              <button type="submit" class="send-btn">Submit</button>
+            </div>
+          </form>
+          <div id="success-message" style="display:none;">
+            Thank you! Your message has been sent.
+            <br><br>
+            <button class="send-another-btn" onclick="resetForm()">Send Another Message</button>
           </div>
         </div>
       </div>
     </section>
+    
+    
+    
+    
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script> 
   </body>
 </html>
-<!-- <div class="skills-left-side">
-        <div class="skills-title">Skills</div>
-        <div class="skills-description">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          voluptatibus aut magni officia! Perferendis quam numquam doloremque
-          ipsam a ex quia nam minima beatae commodi! Minus veritatis excepturi
-          dicta sunt?
-        </div>
-      </div>
-      <div class="skills-right-side"></div> -->

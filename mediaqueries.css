@@ -452,6 +452,10 @@ large: 1.8
     padding-bottom: 5px;
     background: black;
   }
+  nav a:hover {
+    text-shadow: none;
+    box-shadow: none;
+  }
 
   .home {
     background-image: url("./assets/background.jpg");
@@ -476,7 +480,7 @@ large: 1.8
   }
 
   .socials {
-    margin-top: 30px;
+    margin-top: 110px;
     position: absolute;
     top: 50%;
     left: 5%;
@@ -548,6 +552,7 @@ large: 1.8
   }
   .service-title {
     font-size: 20px;
+    color: var(--main-color);
   }
   .services-list {
     display: grid;
@@ -556,9 +561,10 @@ large: 1.8
     align-items: center;
   }
 
-  .service-detail {
+  .service-detail p {
     font-size: 18px;
     text-align: center;
+    margin-top: -10px;
   }
   /* Skills section */
   .skills-section-details {
@@ -630,7 +636,6 @@ large: 1.8
     align-items: start;
   }
   .contact-symbols p {
-    /* margin-top: 45px; */
     margin-bottom: 5px;
   }
 
